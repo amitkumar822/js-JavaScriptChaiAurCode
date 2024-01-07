@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Regular Expression</title>
+</head>
+<body>
+    
+</body>
+<script>
+   // var pattern = /[a-z][0-9]/i;  or var pattern = /[a-z]+[0-9]+/ig; 
+
+   var pattern = new RegExp('[a-z][A-Z][0-9]','ig');  // or RegExp('(?=.*[a-z])');
+    var str = "WsCube123Teach";
+    console.log(pattern.exec(str));  //console.log(pattern.test(str) or .exec(str) or toString());
+</script>
+</html>

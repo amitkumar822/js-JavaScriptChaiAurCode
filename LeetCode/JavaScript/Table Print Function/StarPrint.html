@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Star Print</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+    	var rows = prompt("Please enter number","");
+
+    	//calling
+    	parintPattern(rows);
+
+    	//declare and define function
+    	function parintPattern(rows){
+    		//upper pattern
+    		for (var i = 1; i <= rows; i++) {
+    			
+    			for(var j=1; j<=i; j++) {
+    				document.write("*");
+    			}
+    			document.write("</br>");
+    		}
+
+    		//lower pattern
+    		for (var i = rows; i >= 1; i--) {
+    			
+    			for(var j=1; j<=i; j++) {
+    				document.write("*");
+    			}
+    			document.write("</br>")
+    		}
+    	}
+    </script>
+</body>
+</html>

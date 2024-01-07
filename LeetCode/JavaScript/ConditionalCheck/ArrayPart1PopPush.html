@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>ArrayPart1PushPop...</title>
+	<h1 id="res"></h1>
+	<button onclick="pop()">POP</button>
+	<button onclick="push()">PUSH</button>
+	<button onclick="slice()">Slice</button>
+	<button onclick="reverse()">Reverse</button>
+	<button onclick="shift()">Shift</button>
+</head>
+<body>
+   <script type="text/javascript">
+   	   var fruits = ["Apple", "PineApple", "Banana", "Mango"];
+   	   var demo = fruits;
+   	   document.getElementById('res').innerText = demo;
+   	   function pop() {
+   	   	demo.pop();
+   	   	document.getElementById('res').innerText = demo;
+   	   }
+   	   function push() {
+   	   	var x = prompt("Please enter a fruit","");
+   	   	demo.push(x);
+   	   	document.getElementById('res').innerText = x;
+   	   }
+   	   function slice() {
+   	   	var x = demo.slice(1,2);
+   	   	document.getElementById('res').innerText = x;
+   	   }
+   	   function reverse() {
+   	   	demo.reverse();
+   	   	document.getElementById('res').innerText = demo;
+   	   }
+   	   function shift() {
+   	   	var x = demo.shift();
+   	   	document.getElementById('res').innerText = x;
+   	   }
+   </script>
+</body>
+</html>

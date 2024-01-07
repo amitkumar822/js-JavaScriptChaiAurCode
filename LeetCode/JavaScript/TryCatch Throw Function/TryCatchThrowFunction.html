@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Try catch throw</title>
+</head>
+<body>
+  Please enter a number between 5 to 10
+  <input type="" name="" id="num"/>
+  <br>
+  <button onclick="test()">Click</button>
+  <h1 id="res">
+  	
+  </h1>
+</body>
+   <script type="text/javascript">
+   	  var nam = document.getElementById('num');
+   	  function test() {
+   	  	var data = num.value;
+   	  	try{
+           if(isNaN(data)){
+           	throw "This is not a number";
+           }else{
+           	if(data<5 || data>10){
+           		throw "Number is out of range";
+           	}else{
+           		throw "";
+           	}
+           }
+   	  	}catch(errMessage){
+          document.getElementById("res").innerText = errMessage;
+   	  	}
+   	  	finally{
+   	  		num.value = "";
+   	  	}
+   	  }
+   </script>
+</html>

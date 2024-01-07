@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.red{
+			color: red;
+		}
+		.blue{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+   <div id="test" class="red">
+   	  Hello Everyone!
+   </div>
+   <button onclick="testing()">Click</button> 
+   <h1 id="res"></h1>
+</body>
+   <script type="text/javascript">
+   	  var test = document.getElementById('test');
+      function testing() {
+      	var cls = test.getAttribute("class");
+      	document.getElementById('res').innerText = cls;
+
+   	  // if (cls === "red") {
+   	  // 	test.setAttribute("class","blue");
+   	  // }else{
+   	  // 	test.setAttribute("class","red");
+   	  // }
+      }
+   </script>
+</html>

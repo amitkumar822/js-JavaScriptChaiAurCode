@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>function</title>
+</head>
+<body>
+    <input type="text" name="" id="main">
+    <button onclick="Submit()">
+    	Submit
+    </button>
+    <div class="Submit"> 
+    	India
+    </div>
+    <!-- upper div function[0] -->
+    <!-- <div class="Submit">[1]
+    	
+    </div> -->
+    <!-- <div class="Submit">[2]
+    	
+    </div> -->
+    <!-- ... More Function -->
+
+</body>
+     <script type="text/javascript">
+     	function Submit() {
+     	   // alert("Yes");
+     		var name = document.getElementById('main').value;
+     		var string = "Hello"+" "+ name;
+     		document.getElementsByClassName('Submit')[0].innerHTML = string;
+     	}
+     </script>
+</html>

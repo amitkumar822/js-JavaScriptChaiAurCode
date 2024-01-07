@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Number Validation Check</title>
+</head>
+<body>
+   Please enter your number
+   <br>
+   <input type="text" name="" onkeyup="val(this)">
+   <div id="res"></div>
+</body>
+    <script type="text/javascript">
+
+        document.getElementById('res').style.color = "red";
+
+    	function val(elem) {
+    		if (isNaN(elem.value)) {
+    			document.getElementById('res').innerText = "Please enter numbers only";
+    		}else{
+    			document.getElementById('res').innerText = "";
+    			if(elem.value.length>10){
+    				document.getElementById('res').innerText = "Please enter only 10 digits";
+    			}else{
+    				document.getElementById('res').innerText =""
+    			}
+    		}
+
+    	}
+    	
+    </script>
+</html>

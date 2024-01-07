@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>History Object</title>
+</head>
+<body>
+    <h1></h1>
+    <button onclick="window.history.forward()">Forward</button>
+    <button onclick="window.history.back()">Back</button>
+    <button onclick="window.history.go()">Go</button>
+</body>
+   <script type="text/javascript">
+   	  var c = window.history.length;
+   	  document.getElementsByTagName('h1')[0].innerText = c;
+   </script>
+</html>

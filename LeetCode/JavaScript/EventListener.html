@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Event Listener</title>
+</head>
+<body>
+   <div id="counter">0</div>
+   <button id="btn">Click Me</button>
+   <button id="stop" onclick="stop()">Stop</button>
+</body>
+   <script type="text/javascript">
+   	  var i = 0;
+   	  document.getElementById('btn').addEventListener("click",counter);
+      function counter(){
+      	document.getElementById('counter').innerText = i;
+   	  	i++;
+      }
+
+   	  document.getElementById('btn').addEventListener("mouseenter",colorRed);
+
+   	  function colorRed(){
+   	  	document.getElementById('counter').style.color = "red";
+   	  }
+   	  document.getElementById('btn').addEventListener("mouseleave",colorBlue);
+
+   	  function colorBlue(){
+   	  	document.getElementById('counter').style.color = "blue";
+   	  }
+
+   	  function stop() {
+   	  	document.getElementById('btn').removeEventListener("click",counter);
+   	  }
+   </script>
+</html>
